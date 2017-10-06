@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Sujan\AndroidStudioProjects\AtlasWeather\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="bc599eb9531da9d18bc58ec4eb0b1a1d895f6839">
+        <dex dex="C:\Users\Sujan\AndroidStudioProjects\AtlasWeather\app\build\intermediates\pre-dexed\debug\classes-fd0ac62c33c399d0d696b75a807312cad930e5af.jar" />
+    </item>
+
+</items>

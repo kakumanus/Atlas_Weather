@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/card_wxImage"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="end|center"
+            android:gravity="center"
+            android:textSize="60sp"
+            android:src="@drawable/weather_few_clouds"
+            android:layout_toRightOf="@+id/card_info"
+            android:layout_toEndOf="@+id/card_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="27dp"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:id="@+id/card_info"
+            android:padding="5dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:weightSum="1"
+            android:layout_alignTop="@+id/card_wxImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:id="@+id/card_valid"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Tonight"
+                android:textSize="25sp"
+                android:layout_margin="2dp">
+            </TextView>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/card_temper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="--/--°F"
+                    android:textSize="18sp"
+                    android:layout_margin="2dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/card_wx"
+                    android:text="Sunny w/clouds"
+                    android:textSize="15sp"
+                    android:layout_weight="0.01"
+                    android:layout_gravity="top" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/wxText"
+            android:layout_below="@+id/card_wxImage"
+            android:layout_alignLeft="@+id/card_info"
+            android:layout_alignStart="@+id/card_info"
+            android:layout_alignRight="@+id/card_wxImage"
+            android:layout_alignEnd="@+id/card_wxImage"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
